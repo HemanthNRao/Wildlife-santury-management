@@ -1,0 +1,17 @@
+ mongodb is used to store animal details
+in mongodb database name wildlife1  collection name is animals  
+
+------------------------------------------------------------------------------
+
+use follwing commands to create database and collection in mongodb
+
+ use wildlife1 ** to create databse **
+
+db.createCollection("animals")    ** to create collection **
+
+db.animals.insert({_id:"tig3","name":"ram","type":"tiger","scientific name":"","speces":"","food":"2kg meet","health":"","age":12,"arrival date":"12/12/2018","expiry date":"12/8/19"})    ** to insert animal details into animals collection **
+db.animals.find()  ** to retrive data from animal table **
+
+
+
+

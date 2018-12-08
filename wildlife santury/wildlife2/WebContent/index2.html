@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="style1.css">
+<link rel="stylesheet" href="bootstrap.css">
+
+<style>
+  
+  .top_details {
+    background-color: #4da535;
+    color: #fff;
+    float: left;
+    font-size: 13px;
+    padding: 7px 0 0px;
+    width: 100%;
+}
+
+.right_side a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.left_side a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.left_side {
+    float: left;
+}
+
+.right_side {
+    float: right;
+  font-size:14px;
+}
+.timings
+{
+ float: left;
+    margin-right: 11px;
+}
+    .carousel-indicators {
+    bottom: 0;
+}
+
+  .fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
+width: 100% !important;
+}
+
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="w-top">
+  <div class="w-bar w-deep-purple w-padding w-card" style="letter-spacing:4px;">
+    <a href="#home" class="w-bar-item w-button">Wild Life Sanctuary</a>
+    <!-- Right-sided navbar links-->
+    <div class="w-right w-hide-small">
+      <a href="#about" class="w-bar-item w-button">About</a>
+      <a href="#Book_Ticket" class="w-bar-item w-button">BookTicket</a>
+      <a href="#contact" class="w-bar-item w-button">Contact</a>
+      <a href="admin.html" class="w-bar-item w-button">Profile</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w-display-container w-content1 w-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w-image" src="pic1.png" alt="Sanctuary" width="1600" height="800">
+  <div class="w-display-bottomleft w-padding-large w-opacity">
+    <h1 class="w-xxlarge">Wild Life</h1>
+  </div>
+</header>
+
+
+<!-- Page content -->
+<div class="w-content" style="max-width:1600px">
+
+  <!-- About Section -->
+  <div class="w-row w-padding-64">
+  
+     <div class="w-col m6 w-padding-large" id="about">
+      <h1 class="w-center">About Sanctuary</h1><br>
+      <h5 class="w-center">Tradition since 1972</h5>
+      <p align="justify" class="w-large">The vision of the Bannerghatta Biological Park is to create an opportunity to the citizens - specially to children of Bangalore Metropolitan City to have a Biological Recreation Center very close to the city in the midst of the forests in the valley of the famous Champakadhama hills inside the Bannerghatta National Park. To accomplish this vision, a mini zoo was created in 1972' which gradually grown into the present Biological Park by 2002.</p>
+      <p align="justify" class="w-large w-text-grey w-hide-medium">With the creation of Bannerghatta Biological Park, the vision was enlarged to meet the ever growing demands of the Bangaloreans/ tourists from outside for recreation/ education of younger generations; and also to create awareness on the importance of conservation of flora and fauna - the biodiversity of the nature for the benefit of the future generation in addition to the conservation of the gene pool of the endangered species of wild animals of the region/country.</p>
+    </div>
+    
+    <!-- Gallery -->
+    <div class="gallery" id="Gallery">
+        <h1  w-container class="w-center"><span>Gallery</span></h1>  
+            <div class="w-row">    
+                <div class="col-md-6 col-sm-4 col-xs-6 gal_box">
+                  <a href="ele.jpg" rel="prettyPhoto[gallery1]"><img src="ele.jpg" class="img-responsive"/></a>
+                </div>
+                <div class="col-md-6 col-sm-4 col-xs-6 gal_box">
+                  <a href="parrot.jpg" rel="prettyPhoto[gallery1]"><img src="parrot.jpg" class="img-responsive"/></a>
+                </div>
+                <div class="col-md-6 col-sm-4 col-xs-6 gal_box">
+                  <a href="deer.jpg" rel="prettyPhoto[gallery1]"><img src="deer.jpg" class="img-responsive"/></a>
+                </div>
+                <div class="col-md-6 col-sm-4 col-xs-6 gal_box">
+                  <a href="flamingoes.jpg" rel="prettyPhoto[gallery1]"><img src="flamingoes.jpg" class="img-responsive"/></a>
+                </div>
+                <div class="col-md-6 col-sm-4 col-xs-6 gal_box">
+                  <a href="tortoise.jpg" rel="prettyPhoto[gallery1]"><img src="tortoise.jpg" class="img-responsive"/></a>
+                </div>
+                <div class="col-md-6 col-sm-4 col-xs-6 gal_box1">
+                  <a href="tiger.jpg" rel="prettyPhoto[gallery1]"><img src="tiger.jpg" class="img-responsive"/></a>
+                </div>  
+            </div>           
+     </div>
+  </div>
+</div>
+
+<!-- Ticket Booking -->
+     <div class="w-container w-padding-64" id="Book_Ticket">
+      <h1>Visitors Ticket Form</h1><br>
+       <marquee>Online booking for STUDENT TICKET is not available,please take ticket on-the-spot</marquee>
+      <form action="Visitor.jsp" method="post">
+        <div class="form-body">
+                       <p> NAME:<input class="w-input w-padding-16"  type="text" name="name" id="v1" required/></p>
+                        <p>PHONE:<input class="w-input w-padding-16"  type="tel" name="phn" placeholder="123-123-1234" pattern="[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}" name="phn" id="v2" required/></p>
+                        <p>EMAIL:<input class="w-input w-padding-16"  type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="eml" placeholder="example@domain.com" name="eml" id="v3" required/>
+                        <p>TYPE:<select class="w-input w-padding-16"  name="type">
+                            <option value="adult">ADULT</option>
+                            <option value="child">CHILD</option>
+                            </select>
+                          </p>
+                        <p><button type="submit" class="btn btn-default">Book Ticket</button>
+                        <button type="reset" class="btn btn-default">Reset</button></p>
+        </div>
+      </form>   
+     </div>
+
+  <!-- Contact Section -->
+  <div class="w-container w-padding-small" id="contact">
+    <h1>Contact</h1><br>
+    <div class="sub_container">
+        <div class="container white_bg">
+             <div class="section_block">
+               <div class="row">
+                  
+                    <div class="col-md-4">
+                      <div class="contact_address">
+                          <h4>Mailing Address </h4>
+
+                            <p>The Executive Director</br>
+                            Bannerghatta Biological Park</br>
+                            Bannerghatta, Bangaluru</br>
+                            Karnataka.</br>
+                            Pin – 560 083</p>
+                            
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-8">
+                      <div class="embed-responsive embed-responsive-4by3">
+                          <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.6542637545476!2d77.57547941525475!3d12.800939522062487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae69e00b196db1%3A0x4f6f2e78ffa13a5f!2sBannerghatta+Biological+Park!5e0!3m2!1sen!2sin!4v1480315837034"></iframe>
+                        </div>
+                    </div>
+                    
+                        <div class="full_m">
+                             <div class="col-md-3 col-sm-6"><div class="mmd"><i class="fa fa-phone" aria-hidden="true"></i> 080 29776466, 
+                                                080 29776467</div></div> 
+                             <div class="col-md-3 col-sm-6"><div class="mmd"><i class="fa fa-mobile" aria-hidden="true"></i> 8884414268 </div></div> 
+                            <!-- <div class="col-md-3 col-sm-6"><div class="mmd"><i class="fa fa-fax" aria-hidden="true"></i> 080 – 27828400</div></div> -->
+                             <div class="col-md-3 col-sm-6"><div class="mmd"> <i class="fa fa-envelope" aria-hidden="true"></i> bannerghattazoo@gmail.com</div></div> 
+                        </div>
+                    </div>
+                    
+               </div>
+        </div>
+      </div>  
+</div>       
+
+<!-- Footer -->
+<footer class="footer">
+          <div class="container">         
+                  <div class="col">
+                      <h4>Park Information</h4>
+                        <ul>
+                            <li><a href="about_park.html">About Park</a></li>
+                            <li><a href="flora_fauna.html">Flora &amp; Fauna</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="highlights.html">Highlights</a></li>
+                            <li><a href="contact_us.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+               
+                
+
+                
+                  <div class="col">
+                   <h4>Travel Information</h4>
+                  <ul>
+                      <li><a href="tariff.html">Tariff</a></li>
+                        <li><a href="time_to_visit.html">Time to Visit</a></li>
+                        <li><a href="zoomap.html">Zoo Map</a></li>
+                        <li><a href="facilities.html">Facilities</a></li>
+                         <li><a href="how_to_reach.html">How to Reach</a></li>
+              </ul>
+                   </div>
+               
+                
+
+
+               
+                  <div class="col">
+                      <h4>Places To See</h4>
+                        <ul>
+                            <li><a href="boating.html">Boating</a></li>
+                            <li><a href="zoo.html">Zoo</a></li>
+                            <li><a href="safari.html">Safari</a></li>
+                            <li><a href="butterfly_park.html">Butterfly Park</a></li>
+                            <li><a href="wilderness_tourism.html">Wilderness Tourism</a></li>
+                  </ul>
+                    </div>
+                
+                
+                  <div class="col">
+                      <h4>support</h4>
+                        <ul>
+                            <li><a href="rescue_center.html">Rescue Centre </a></li>
+                            <li><a href="animal_vet_care.html">Animal Vet Care</a></li>
+                            <li><a href="adopt.html">Adoption Scheme</a></li>
+                             <li><a href="education.html">Zoo Education</a></li>
+                            <li><a href="publication.html">Publication</a></li>
+                        </ul>
+                    </div>
+            
+          </div>
+          <a href="#" class="w-button w-deep-purple w-padding-large  w-margin-bottom"><i class="fa fa-arrow-up w-margin-right"></i>To the top</a>
+
+            <div class="copy_right">Copyright 2016 · All rights reserved. </div>
+
+        </footer>
+</body>
+</html>
